@@ -1,0 +1,32 @@
+﻿<Window x:Class="snake.SignUpScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:snake"
+        mc:Ignorable="d"
+        Title="Sign Up" Height="450" Width="800"
+        WindowState="Maximized">
+    <Border Background="White" CornerRadius="20" Margin="20">
+        <StackPanel Margin="20">
+            <Label Content="Sign up" Foreground="Black" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator></Separator>
+            <Label Content="First Name" Foreground="Black"/>
+            <TextBox IsReadOnly="False" IsEnabled="True" Name="FirstNameText" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Label Name="FirstNameAsterisk" Content="*" Visibility="Hidden"  Foreground="Red"/>
+            <Label Content="Surname" Foreground="Black"/>
+            <TextBox IsReadOnly="False" IsEnabled="True" Name="SurnameText" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Label Name="SurnameAsterisk" Content="*" Visibility="Hidden"  Foreground="Red"/>
+            <Label Content="Username" Foreground="Black"/>
+            <TextBox IsReadOnly="False" IsEnabled="True" Name="UsernameText" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Label Name="UsernameAsterisk" Content="*" Visibility="Hidden"  Foreground="Red"/>
+            <Label Content="Password" Foreground="Black"/>
+            <PasswordBox IsEnabled="True" Name="PasswordText" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Label Name="PasswordAsterisk" Content="*" Visibility="Hidden"  Foreground="Red"/>
+            <Button Name="RegisterButton" Click="RegisterButton_Click"  Content="Register" Margin="60 10" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Button Name="SignInButton" Click="SignInButton_Click" Content="Sign in" Margin="60 10" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Button Name="ExitButton" Click="ExitButton_Click" Content="Exit" Margin="60 10" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Label Name="InvalidFields" Content="All marked fields are invalid" Visibility="Hidden"  Foreground="Red"/>
+        </StackPanel>
+    </Border>
+</Window>

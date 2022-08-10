@@ -1,0 +1,19 @@
+﻿<Window x:Class="snake.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:snake"
+        mc:Ignorable="d"
+        Title="Main Menu" Height="450" Width="800">
+    <Border Background="White" CornerRadius="20" Margin="20">
+        <StackPanel Margin="20">
+            <Label Content="Main Menu" Foreground="Black" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator></Separator>
+            <Button Name="PlaySnakeButton" Click="PlaySnakeButton_Click"  Content="Play Snake" Margin="60 10" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Button Name="LeaderboardButton" Click="LeaderboardButton_Click" Content="View Leaderboard" Margin="60 10" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Button Name="HelpButton" Click="HelpButton_Click" Content="Help" Margin="60 10" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <Button Name="SignOutButton" Click="SignOutButton_Click" Content="Sign out" Margin="60 10" Background="LightGray" Foreground="Black" FontSize="18"/>
+        </StackPanel>
+    </Border>
+</Window>
